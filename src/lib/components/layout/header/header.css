@@ -1,0 +1,31 @@
+.header--general {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.header_ul--links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_nav--links {
+  color: var(--color-texto-primario);
+  transition: color 0.3s ease;
+}
+
+.header_nav--links:hover {
+  color: var(--color-principal);
+}

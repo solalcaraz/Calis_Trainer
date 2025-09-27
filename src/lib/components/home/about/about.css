@@ -1,0 +1,19 @@
+.about--contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.about_contenedor--imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* MODIFICAR BORDE misma medida abajo */
+  overflow: hidden; /* Se recorta lo que "sobra" */
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+.foto {
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover; /* Ocupa todo sin deformarse */
+}

@@ -1,0 +1,75 @@
+/* Importar tipografías desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+  --color-principal: #0e98d8;
+  --color-secundario: #d8f1fd;
+  /* --color-secundario: #177777; */
+  --color-card: #202020;
+  --color-texto-primario: #ffffff;
+  --color-texto-secundario: #97a3a8;
+  --color-fondo: #707070;
+  
+  /* Tipografía */
+  --font-titulo: 'Oswald', sans-serif;
+  --font-cuerpo: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General - tipografía y tamaño*/
+body {
+    font-family: var(--font-cuerpo);
+    background-color: var(--color-fondo);
+    color: var(--color-texto-primario);
+}
+
+/* Titulos */
+h1 {
+  font-family: var(--font-titulo);
+  color: var(--color-texto-primario);
+}
+h2,h3 {
+    font-family: var(--font-titulo);
+    color: var(--color-texto-secundario);
+}
+
+/* Estilo para los links */
+a {
+    text-decoration: none;
+}
+
+/* Estilo para las listas sin puntos */
+ul {        
+    list-style-type: none;
+}
+
+/* Estilo para el contenedor general de todos los contenidos
+    redefinir en cada archivo propio las dimensiones */
+.contenedor-general{
+    background-color: var(--color-card);
+    border-radius: 20px; 
+    padding: 2rem;
+    margin: 4rem;
+}
+
+/* Para que solo se apliquen los estilos si el dispositivo lo permite */
+@media (hover: hover) {
+        /* Sombra para el boton */
+    button:hover {
+        box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2);
+    }
+        /* Sombra para los elementos del nav */
+    .links-navegacion:hover {
+        box-shadow: 0 0 10px rgb(214, 214, 214);
+    }
+}
+
+/* 🔑 Paso 5: Mejorar con detalles
+Agregá transiciones suaves (fade-in, hover effects).
+Embed de Instagram o widget de feed.
+Botón flotante de WhatsApp (opcional, para que siempre esté visible). */
