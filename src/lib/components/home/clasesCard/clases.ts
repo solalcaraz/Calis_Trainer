@@ -1,3 +1,7 @@
+export interface ItemConId {
+  item: number,
+  texto: string
+}
 export class Clase {
   constructor(
     public id: string,
@@ -5,8 +9,8 @@ export class Clase {
     public nombre: string,
     public breveDescripcion: string,
     public duracion: string,
-    public horarios: string[],
-    public beneficios: string[],
+    public horarios: ItemConId[],
+    public beneficios: ItemConId[],
     public ubicacion: string,
     public descripcion: string
   ){}
@@ -19,9 +23,9 @@ export const clases = [
     'Entrená en equipo al aire libre.',
     '1hs',
     [
-      "Lunes 18:30 a 21:00",
-      "Miércoles 19:00 a 21:00",
-      "Viernes 18:30 a 21:00"
+      {item: 1, texto: "Lunes 18:30 a 21:00"},
+      {item: 2, texto: "Miércoles 19:00 a 21:00"},
+      {item: 3, texto: "Viernes 18:30 a 21:00"}
     ],
     [],
     'Plaza Irlanda - Caballito',
@@ -34,10 +38,10 @@ export const clases = [
     'Plan de 4 semanas',
     [],
     [
-      "Plan de entrenamiento personalizado",
-      "Llamadas de acompañamiento semanales",
-      "Videos explicativos",
-      "Seguimiento constante"
+      {item: 1, texto: "Plan de entrenamiento personalizado"},
+      {item: 2, texto: "Llamadas de acompañamiento semanales"},
+      {item: 3, texto: "Videos explicativos"},
+      {item: 4, texto: "Seguimiento constante"}
     ],
     'Virtual',
     'Entrená desde tu casa con rutinas claras, apoyo constante y resultados reales. Ideal si buscás flexibilidad horaria y mantener la motivación con un acompañamiento cercano.'
