@@ -9,52 +9,68 @@ Precio o plan de clases (si aplica)
 
 Botón: Contactar por WhatsApp
 -->
-<script>
+<!-- <script>
   import { clases } from '$lib/home/clasesCard/clases.ts'
 </script>
-<main>
+
+<main class="contenedor-general">
   <h1>Clases</h1>
-  <p> Descubrí la propuesta que mejor se adapta a vos.  
+  <p class="clases--intro"> Descubrí la propuesta que mejor se adapta a vos.  
     Todas las clases están pensadas para acompañarte en tu progreso, sea en grupo, online o de manera personalizada.
   </p>
 
-  {#each clases as clase}
-    <section id={clase.id}>
+  {#each clases as clase (clase.id)}
+    <section id={clase.id} class="clases_card">
       <h2>{clase.nombre}</h2>
       <p>{clase.detalle}</p>
-  
-    <!-- horarios y descripción -->
-    <!-- 
-      1hs
-      Horarios:
-      lunes 18.30 a 21hs
-      miercoles 19 a 21hs
-      viernes 18.30 a 21hs
-      Entrenamientos al aire libre en Plaza irlanda - caballito
-      Clases grupales en contacto con la naturaleza, energía motivadora y progresiones adaptadas a todos los niveles.
-    -->
-  </section>
+      {#if clase.duracion}
+        <p class="clases_card--duracion">{clase.duracion}</p>
+      {/if}
 
-  <section id="online">
-    <h2>Clases Online</h2>
-    <!-- info online -->
-    <!-- 
-      Clases online de calistenia con seguimiento personalizado durante 4 semanas
-      Incluye:
-      plan de entrenamiento adaptado para vos
-      llamadas de acompañamiento
-      videos explicativos
-      Entrena desde tu cada con progresiones claras, apoyo constante y resultados reales.
-    -->
-  </section>
+      {#if clase.horarios}
+        <div class="horarios">
+          <h3>Horarios</h3>
+          <ul>
+            {#each clase.horarios as horario ()}
+              <li>{horario}</li>
+            {/each}
+          </ul>
+        </div>
+      {/if}
 
-  <section id="personalizadas">
-    <h2>Clases Personalizadas</h2>
-    <!-- info personalizada -->
-    <!-- 
-      Entrenamiento individual en CABA, adaptado a tus objetivos (calistenia o fitness integral)
-      Sesiones 1 a 1 para mejorar fuerza, tecnica y resultados, con acompañamiento cercano
-      Consultar horarios disponibles.
-    -->
-  </section>
+      <p class="ubicacion">📍 {clase.ubicacion}</p>
+
+      {#if clase.detalles}
+        <div class="detalles">
+          <h3>Incluye:</h3>
+          <ul>
+            {#each clase.detalles as detalle}
+              <li>{detalle}</li>
+            {/each}
+          </ul>
+        </div>
+      {/if}
+
+      <p class="descripcion">{clase.descripcion}</p>
+
+      <a 
+        href="https://wa.me/5491123456789?text=Hola!%20Quiero%20más%20info%20sobre%20{clase.nombre}" 
+        target="_blank" 
+        class="btn-secundario">
+        Consultar por WhatsApp
+      </a>
+    </section>
+  {/each} -->
+
+  <!-- <div class="cta-final">
+    <h2>¿Listo para empezar?</h2>
+    <p>Escribinos y sumate a la comunidad de Calis Trainer. ¡Tu mejor versión empieza hoy! 💪</p>
+    <a 
+      href="https://wa.me/5491123456789?text=Hola!%20Quiero%20sumarme%20a%20las%20clases" 
+      target="_blank" 
+      class="btn-principal">
+      Contactar por WhatsApp
+    </a>
+  </div> 
 </main>
+-->
