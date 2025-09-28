@@ -81,3 +81,9 @@ ul {
 Agregá transiciones suaves (fade-in, hover effects).
 Embed de Instagram o widget de feed.
 Botón flotante de WhatsApp (opcional, para que siempre esté visible). */
+
+@media (max-width: 500px) {
+    .contenedor-general {
+        margin: 2rem 1rem;
+    }
+}
