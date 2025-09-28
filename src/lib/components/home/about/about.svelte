@@ -1,6 +1,5 @@
 <script>
   import './about.css'
-  // import imagen from ...
 </script>
 <section class="contenedor-general about--contenedor">
   <div class="about_contenedor--imagen">

@@ -14,7 +14,7 @@ export class Clase {
 
 export const clases = [
   new Clase('presencial', 
-    'src/static/users-three.svg', 
+    '/users-three.svg', 
     'Clases Presenciales', 
     'Entrená en equipo al aire libre.',
     '1hs',
@@ -28,7 +28,7 @@ export const clases = [
     'Entrenamientos grupales al aire libre en un ambiente motivador y en contacto con la naturaleza. Las progresiones están adaptadas a todos los niveles, desde principiantes hasta avanzados. Cada sesión combina movimiento, fuerza y energía compartida.'
   ),
   new Clase('online', 
-    'src/static/laptop.svg', 
+    '/laptop.svg', 
     'Clases Online', 
     'Accedé a entrenamientos guiados desde tu casa.',
     'Plan de 4 semanas',
@@ -43,7 +43,7 @@ export const clases = [
     'Entrená desde tu casa con rutinas claras, apoyo constante y resultados reales. Ideal si buscás flexibilidad horaria y mantener la motivación con un acompañamiento cercano.'
   ),
   new Clase('personalizado', 
-    'src/static/handshake.svg', 
+    '/handshake.svg', 
     'Clases Personalizadas', 
     'Sesiones 1 a 1 para progresar a tu ritmo.',
     'Sesiones 1 a 1 (consultar disponibilidad)',
