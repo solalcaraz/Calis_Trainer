@@ -6,7 +6,6 @@
 }
 
 .about_contenedor--texto {
-  text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
