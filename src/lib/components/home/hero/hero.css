@@ -12,7 +12,7 @@
   text-align: center;
   gap: 2rem;
 
-  background-image: url('src/lib/assets/calis-trainer-hero.png');
+  background-image: url('/calis-trainer-hero.png');
   background-size: cover;
   background-position: center;
 
