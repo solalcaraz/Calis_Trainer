@@ -1,7 +1,3 @@
-.hero * {
-  position: relative;
-  z-index: 1;
-}
 .hero {
   display: flex;
   flex-direction: column;
@@ -13,12 +9,15 @@
   gap: 2rem;
 
   background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url('/calis-trainer-hero.png');
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('/calis-trainer-hero.jpg');
   background-size: cover;
   background-position: center;
 
+  h2, h3 {
+    font-family: var(--font-titulo);
+  }
   h2 {
     font-size: 2rem;
   }
@@ -33,11 +32,4 @@
   button:hover {
     background-color: #704bcc; /* tono violeta más oscuro */
   }
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  z-index: 0;
 }
