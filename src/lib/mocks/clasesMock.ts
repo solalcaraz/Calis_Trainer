@@ -1,20 +1,4 @@
-export interface ItemConId {
-  item: number,
-  texto: string
-}
-export class Clase {
-  constructor(
-    public id: string,
-    public icono: string,
-    public nombre: string,
-    public breveDescripcion: string,
-    public duracion: string,
-    public horarios: ItemConId[],
-    public beneficios: ItemConId[],
-    public ubicacion: string,
-    public descripcion: string
-  ){}
-}
+import { Clase } from "$lib/DTO/clases"
 
 export const clases = [
   new Clase('presencial', 
@@ -50,9 +34,21 @@ export const clases = [
     '/handshake.svg', 
     'Clases Personalizadas', 
     'Sesiones 1 a 1 para progresar a tu ritmo.',
-    'Sesiones 1 a 1 (consultar disponibilidad)',
+    '1hs (consultar disponibilidad)',
     [], [],
     'En CABA',
     'Entrenamiento individual adaptado 100% a tus objetivos: calistenia o fitness integral. Sesiones diseñadas para mejorar fuerza, técnica y resultados, con acompañamiento cercano y feedback directo.'
+  ),
+  new Clase('flex',
+    '/GrommetIconsYoga.svg',
+    'Flex Consciente',
+    'Un cuerpo fuerte y flexible',
+    '1hs', 
+    [
+      {item: 1, texto: 'Viernes 21hs'}
+    ],
+    [],
+    'Plaza Irlanda - Caballito',
+    'Entrenamientos enfocados en mejorar la movilidad, la postura y liberar tensiones, a través de movimientos suaves y controlados que complementan la calistenia. Estas clases se realizan en conjunto con otra profe especializada en movilidad y bienestar corporal. '
   )
 ]
