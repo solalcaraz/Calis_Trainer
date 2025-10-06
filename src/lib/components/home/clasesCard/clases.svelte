@@ -1,6 +1,6 @@
 <script>
   import './clases.css'
-  import { clases } from './clases.ts'
+  import { clases } from '$lib/mocks/clasesMock'
 
 </script>
 
