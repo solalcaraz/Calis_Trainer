@@ -25,13 +25,17 @@
         
         <article class="info">
           <p>
-            <span><img src="/clock.svg" alt="Icono duración"></span> 
-            <span class="info--texto">Duración:</span> 
+            <span>
+              <img src="/clock.svg" alt="Icono duración">
+              <span class="info--texto">Duración:</span> 
+            </span> 
             {clase.duracion}
           </p>
           <p>
-            <span><img src="/map-pin.svg" alt="Icono pin mapa"></span> 
-            <span class="info--texto">Ubicación:</span>
+            <span>
+              <img src="/map-pin.svg" alt="Icono pin mapa">
+              <span class="info--texto">Ubicación:</span>
+            </span> 
             {clase.ubicacion}
           </p>
           {#if clase.ubicacion === 'Plaza Irlanda - Caballito'}

@@ -42,6 +42,7 @@
   
   p, li, a {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
   }
@@ -70,3 +71,19 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+@media (max-width: 500px) {
+  .clases_contenedor h1{
+      font-size: 4.5rem;
+  }
+
+  .clases_card {
+    padding: 2rem 1rem;
+  }
+
+  .info, .horarios, .beneficios, .contenedor_wpp-flotante {
+    p, li {
+      flex-direction: column;
+      
+    }
+  }
+}
