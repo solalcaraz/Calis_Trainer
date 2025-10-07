@@ -18,10 +18,12 @@
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <!-- svelte-ignore event_directive_deprecated -->
   <div class="modal-overlay" on:click={() => onClose()}>
-    <div class="contenedor-general modal-content" on:click|stopPropagation>
+    <div class="modal-content" on:click|stopPropagation>
       <button class="modal-close" on:click={() => onClose()}>Cerrar</button>
       <h3>{titulo}</h3>
-       {@render contenido()}
+      <article class="contenedor_modal--contenido">
+        {@render contenido()}
+      </article>
     </div>
   </div>
 {/if}

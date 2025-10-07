@@ -71,6 +71,11 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+.iframe--maps {
+  height: 70vh;
+  width: 100vh;
+}
+
 @media (max-width: 500px) {
   .clases_contenedor h1{
       font-size: 4.5rem;

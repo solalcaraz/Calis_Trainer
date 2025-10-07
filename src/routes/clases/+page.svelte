@@ -47,10 +47,8 @@
                 <!-- svelte-ignore a11y_missing_attribute -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.584683211313!2d-58.46044252517908!3d-34.6146621729504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1ea91fd4cf%3A0xbaee7969a08f24df!2sPlaza%20Irlanda!5e0!3m2!1ses-419!2sar!4v1759764966307!5m2!1ses-419!2sar"
-                  width="400"
-                  height="300"
-                  style="border:0;"
                   loading="lazy"
+                  class="iframe--maps"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               {/snippet}

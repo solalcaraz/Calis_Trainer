@@ -13,11 +13,14 @@
 }
 
 .modal-content {
+    background-color: var(--color-card);
+    border-radius: 20px;
+    padding: 2rem 0.5rem;
     position: relative;
     max-width: 600px;
-    width: 80%;
+    margin: 0 1rem;
     max-height: 95%;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .modal-close {
