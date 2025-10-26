@@ -1,7 +1,15 @@
-<script>
+<script lang="ts">
   import './hero.css'
   import Boton from '$lib/components/generales/boton/boton.svelte'
 
+  interface heroProps {
+    h1: string
+    h2?: string
+    h3?: string
+    vista: 'clases' | 'home'
+  }
+
+  let { h1, h2, h3, vista }: heroProps = $props()
   const accesoWpp = () => {
     const mensaje = encodeURIComponent("¡Hola! Me gustaría sumarme al equipo de calistenia")
     const numero = "5491137568867"
@@ -9,11 +17,11 @@
   }
 </script>
 
-<section class="hero">
-  <h1>Calis Trainer</h1>
+<section class="hero imagen--{vista}">
+  <h1>{h1}</h1>
   <article>
-    <h2>Entrenadora de Calistenia</h2>
-    <h3>Transformá tu cuerpo y tu mente a cualquier etapa de tu vida</h3>
+    <h2>{h2}</h2>
+    <h3>{h3}</h3>
   </article>
   <Boton tipo='primario' onclick={() => accesoWpp()}>
     Sumate al equipo

@@ -8,13 +8,6 @@
   height: 100vh;
   gap: 2rem;
 
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('/calis-trainer-hero.jpg');
-  background-size: cover;
-  background-position: center;
-
   h2, h3 {
     font-family: var(--font-titulo);
   }
@@ -32,4 +25,21 @@
   button:hover {
     background-color: #704bcc; /* tono violeta más oscuro */
   }
+}
+
+.imagen--home{
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+), url('/calis-trainer-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.imagen--clases{
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+), url('/calis-trainer-grupal.jpg');
+  background-size: cover;
+  background-position: center;
 }
