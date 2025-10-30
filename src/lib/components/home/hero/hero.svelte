@@ -7,14 +7,13 @@
     h2?: string
     h3?: string
     vista: 'clases' | 'home'
+    btnTexto: string
+    // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
+    btnClick: void
   }
 
-  let { h1, h2, h3, vista }: heroProps = $props()
-  const accesoWpp = () => {
-    const mensaje = encodeURIComponent("¡Hola! Me gustaría sumarme al equipo de calistenia")
-    const numero = "5491137568867"
-    window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank", "noopener,noreferrer")
-  }
+  let { h1, h2, h3, vista, btnTexto, btnClick }: heroProps = $props()
+  
 </script>
 
 <section class="hero imagen--{vista}">
@@ -23,7 +22,7 @@
     <h2>{h2}</h2>
     <h3>{h3}</h3>
   </article>
-  <Boton tipo='primario' onclick={() => accesoWpp()}>
-    Sumate al equipo
+  <Boton tipo='primario' onclick={() => btnClick}>
+    {btnTexto}
   </Boton>
 </section>

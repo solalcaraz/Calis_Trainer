@@ -3,12 +3,18 @@
   import Hero from '$lib/components/home/hero/hero.svelte'
   import Carrusel from '$lib/components/clases/carrusel/carrusel.svelte'
   import { testimonios, trucos, grupales } from '$lib/mocks/archivosClasesMock'
+
+  const accesoIg = () => {
+    window.open('https://www.instagram.com/calis.trainer/', '_blank')
+  }
 </script>
 
 <Hero
   h1="Nuestras Clases"
   vista="clases"
   h3="Conocé los avances, experiencias y logros de quienes entrenan en el equipo."
+  btnTexto="Conoce más en Instagram"
+  btnClick={accesoIg()}
 />
 
 <article class="contenedor-general">
