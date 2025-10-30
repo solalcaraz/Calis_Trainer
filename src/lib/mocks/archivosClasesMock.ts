@@ -6,11 +6,17 @@ export const testimonios: ArchivosItem[]= [
   {id: 2, src: '/testimonios/testimonio3.jpg' }
 ]
 
+export const trucosImg: ArchivosItem[]= [
+  {id: 0, src: '/trucos/trucos1.jpg' },
+  {id: 1, src: '/trucos/trucos2.jpg' },
+  {id: 2, src: '/trucos/trucos3.jpg' }
+]
+
 export const trucos: ArchivosItem[]= [
   {id: 0, src: '/videos/trucos1.mp4' },
-  {id: 1, src: '/videos/.mp4' },
-  {id: 2, src: '/videos/.mp4' },
-  {id: 3, src: '/videos/.mp4' }
+  {id: 1, src: '/videos/trucos2.mp4' },
+  {id: 2, src: '/videos/trucos3.mp4' },
+  {id: 3, src: '/videos/trucos4.mp4' }
 ]
 
 export const grupales: ArchivosItem[]= [
