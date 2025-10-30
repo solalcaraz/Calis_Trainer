@@ -2,7 +2,7 @@
   import './vistaAlumnos.css'
   import Hero from '$lib/components/home/hero/hero.svelte'
   import Carrusel from '$lib/components/clases/carrusel/carrusel.svelte'
-  import { testimonios, trucos, grupales } from '$lib/mocks/archivosClasesMock'
+  import { testimonios, trucosImg, trucos, grupales } from '$lib/mocks/archivosClasesMock'
 
   const accesoIg = () => {
     window.open('https://www.instagram.com/calis.trainer/', '_blank')
@@ -24,6 +24,11 @@
 
 <article class="contenedor-general">
   <h2>Ellas lograron trucos DESDE CERO</h2>
+  <Carrusel tipo="imagen" items={trucosImg}/>
+</article>
+
+<article class="contenedor-general">
+  <h2>Algunos videos del grupo</h2>
   <Carrusel tipo="video" items={trucos}/>
 </article>
 
