@@ -41,5 +41,5 @@
   rgba(0, 0, 0, 0.5)
 ), url('/calis-trainer-grupal.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
 }
